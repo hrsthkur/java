@@ -6,6 +6,10 @@ public class DiceJack{
         int first = sc.nextInt();
         int second = sc.nextInt();
         int third = sc.nextInt();
+        
+        if(check(first,second,third)){
+            System.out.println("Bro!! Enter num less than 6");
+        }
         int sum = first + second + third;
 
         int rollSum = randomSum();
@@ -18,6 +22,10 @@ public class DiceJack{
         
 
 
+    }
+
+    public static boolean check(int a,int b,int c){
+        return (a > 6 || b > 6 || c > 6);
     }
 
     public static int randomSum(){
