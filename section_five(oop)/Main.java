@@ -3,13 +3,9 @@ public class Main {
 
     public static void main(String[] args){
 
-        Car toyota = new Car();
-        toyota.make = "Toyota";
-        toyota.price = 100000;
-        toyota.year = 2020;
-        toyota.color = "Green";
+        Car toyota = new Car("Toyota",100000,2020,"Green");
 
-        System.out.println(toyota.make +" - " + toyota.price);
+        System.out.println(toyota.getMake() +" - " + toyota.getPrice());
 
     }
 }
